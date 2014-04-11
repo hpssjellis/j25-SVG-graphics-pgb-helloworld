@@ -31,8 +31,8 @@
 
 <hr>
 
-
-<svg id="mySvgTag" width="300" height="200" style="position:relative" >
+<div id="mySvgTag"></div>
+<svg  width="300" height="200" style="position:relative" >
 
     <text x="0" y="300" fill="red" transform="rotate(30 20,40)">I love SVG</text>
     
@@ -42,13 +42,13 @@
 
 <input type=button value="javascript access" onclick="{
   var mySVG = document.getElementById('mySvgTag');
-  alert('The objects x value is ' + mySVG.x.baseVal.value )
-  mySVG.x.baseVal.value += 200;
+  alert('The objects x value is ' + mySVG.style.left )
+  mySVG.style.left = '200px';
 }">
 
 
 </svg>
-
+</div>
 
 <hr>
 
@@ -79,7 +79,7 @@
 
 
 <svg width="600" height="200">
-  <rect id="rec" x="300" y="100" width="300" height="100" style="fill:yello"> 
+  <rect id="rec" x="300" y="100" width="300" height="100" style="fill:yellow"> 
     <animate attributeName="x" attributeType="XML" begin="0s" dur="6s" fill="freeze" from="300" to="0" /> 
     <animate attributeName="y" attributeType="XML" begin="0s" dur="6s" fill="freeze" from="100" to="0" /> 
     <animate attributeName="width" attributeType="XML" begin="0s" dur="6s" fill="freeze" from="300" to="800" /> 
