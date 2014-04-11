@@ -8,15 +8,21 @@
   
   <line x1="0" y1="0" x2="20" y2="20" style="stroke:rgb(255,0,0);stroke-width:2" />
   <rect width="30" height="10" style="fill:rgb(0,0,255);stroke-width:3;stroke:rgb(0,0,0)">
+      <animate attributeType="CSS" attributeName="opacity" from="1" to="0" dur="5s" repeatCount="indefinite" />
+  </rect>    
   
   <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
   <path d="M150 0 L75 200 L225 200 Z" />
   
-  <text x="2000" y="215" fill="red">I love SVG!</text>
+  <a xlink:href="http://www.w3schools.com/svg/" target="_blank">
+         <text x="10" y="20" style="fill:red;">Several lines:
+         <tspan x="10" y="45">First line.</tspan>
+         <tspan x="10" y="70">Second line.</tspan>
+      </text>
+  </a>
   
   
-  <polygon points="100,10 40,180 190,60 10,60 160,180"
-  style="fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;" />
+  <path stroke-dasharray="20,10,5,5,5,10" d="M5 60 l215 0" />
   
 </svg>
 
