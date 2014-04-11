@@ -6,7 +6,8 @@
 
 <svg  width="600" height="500">
   
-  <line x1="0" y1="0" x2="20" y2="20" style="stroke:rgb(255,0,0);stroke-width:2" />
+  <line x1="0" y1="0" x2="200" y2="20" style="stroke:rgb(255,55,0);stroke-width:2" />
+  
   <rect width="30" height="10" style="fill:rgb(0,0,255);stroke-width:3;stroke:rgb(0,0,0)">
       <animate attributeType="CSS" attributeName="opacity" from="1" to="0" dur="5s" repeatCount="indefinite" />
   </rect>    
@@ -24,7 +25,6 @@
       </text>
   </a>
   
-    <text x="0" y="300" fill="red" transform="rotate(30 20,40)">I love SVG</text>
 
   
 </svg>
@@ -32,15 +32,17 @@
 
 
 
-<svg id="mySvgTag" width="300" height="200">
+<svg id="mySvgTag" width="300" height="200" style="position:absolute;left:100px;top:500px;">
 
+    <text x="0" y="300" fill="red" transform="rotate(30 20,40)">I love SVG</text>
+    
   <polygon points="100,10 40,180 190,60 10,60 160,180" style="fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;" />
 </svg>
 
 
 <input type=button value="javascript access" onclick="{
   var mySVG = document.getElementById('mySvgTag');
-  alert('The objects width is' + mySVG.x.baseVal.value + 'Lets move it to the right!')
+  alert('The objects width is ' + mySVG.x.baseVal.value + ' Lets move it to the right!')
   mySVG.x.baseVal.value += 200;
 }">
 
