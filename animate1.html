@@ -1,4 +1,3 @@
-
 <svg id="mySvgTag" width="300" height="200" style="position:absolute;left:25px;top:25px;" >
 
     
@@ -9,7 +8,11 @@
 <input type=button value="javascript access" onclick="{
   var mySVG = document.getElementById('mySvgTag');
   alert('The objects x value is ' + mySVG.style.left )
-  mySVG.style.left = '200px';
+}">
+
+<input type=button value="Go Left" onclick="{
+  var mySVG = document.getElementById('mySvgTag');
+  mySVG.style.left = parseInt(mySVG.style.left)+50+'px';
 }">
 
 
