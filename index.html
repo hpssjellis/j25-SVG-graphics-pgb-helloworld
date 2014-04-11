@@ -20,7 +20,7 @@
   <a xlink:href="http://www.w3schools.com/svg/" target="_blank">
          <text x="500" y="20" style="fill:red;">Several lines:
          <tspan x="500" y="45">First line.</tspan>
-         <tspan x="500" y="70">Second line.</tspan>
+         <tspan x="500" y="70"  transform="rotate(30 20,40)">Second line.</tspan>
       </text>
   </a>
   
@@ -40,7 +40,8 @@
 
 <input type=button vlaue=data onclick="{
   var mySVG=document.getElementById('mySvgTag');
-  alert('The objects width is'+mySVG.width)
+  alert('The objects width is'+mySVG.width+'Lets move it to the right!')
+  mySVG.x.baseVal.value+=20;
 }">
 
 
