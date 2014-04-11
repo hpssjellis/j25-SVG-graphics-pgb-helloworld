@@ -1,14 +1,13 @@
-j25-canvas-pgb-helloworld
+j25-SVG-graphics-pgb-helloworld
 =========================
 
-Cavas using Raphael for phonegap
+Using SVG graphics with html5 and phonegap. Originally tried to get Cavas using Raphael for phonegap but it did not work.
 
 
-As of April 9, 2014 I have not yet got this going.
+As of April 10, 2014 It seems to be working.
 
 
 
 
-Must download the raphael.js file from http://raphaeljs.com/ . The April 10, 2014 file is in this repo.
 
 
